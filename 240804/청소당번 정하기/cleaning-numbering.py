@@ -4,25 +4,13 @@ cntc = 0
 cnth = 0
 cntb = 0
 
-datec = 2
-dateh = 3
-dateb = 12
 
-for i in range(0,n+1):
-    if i==dateb:
+for i in range(1,n+1):
+    if i%12==0:
         cntb += 1
-        dateb += 12
-        if i==datec:
-            datec += 2
-        elif i==dateh:
-            dateh += 3
-    elif i==dateh:
+    elif i%3==0:
         cnth += 1
-        dateh += 3
-        if i==datec:
-            datec += 2
-    elif i==datec:
+    elif i%2==0:
         cntc += 1
-        datec += 2
     
 print(cntc,cnth,cntb)
