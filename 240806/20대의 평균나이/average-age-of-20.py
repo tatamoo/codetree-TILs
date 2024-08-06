@@ -8,4 +8,4 @@ while True:
     else:
         break
 
-print(f"{val/cnt:.2f}")
+print(f"{(val/cnt):.2f}")
