@@ -15,7 +15,7 @@ if n%2==0:
 else:
     for i in range(n-2):
         for j in range(n):
-            if j<=i or j%2==0 or :
+            if j<=i or j%2==0 :
                 print(" ",end=' ')
             else:
                 print("*",end=' ')
