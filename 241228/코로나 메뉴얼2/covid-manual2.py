@@ -10,7 +10,7 @@ for _ in range(3):
         else:
             cnt[3] += 1
     else:
-        if t>37:
+        if t>=37:
             cnt[2] += 1
         else:
             cnt[4] += 1
