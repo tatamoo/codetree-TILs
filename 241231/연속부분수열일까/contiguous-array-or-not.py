@@ -4,15 +4,18 @@ n1, n2 = int(n1), int(n2)
 a = list(map(int,input().split()))
 b = list(map(int,input().split()))
 
-if b[0] in a:
-    y = 0
-    for i in range(1,len(b)):
-        if b[i] != a[a.index(b[0])+i]:
-            print("No")
-            y = 1
-            break
-    if y==0:
-        print("Yes")
-else:
+y = 0
+for i in range(len(a)):
+    if a[i] == b[0]:
+        for j in range(1,len(b)):
+            if a[i+j] != b[j]:
+                break
+            
+            if j==len(b):
+                y = 1
+                print("Yes")
+
+if y!=1:
     print("No")
-    
+        
+        
