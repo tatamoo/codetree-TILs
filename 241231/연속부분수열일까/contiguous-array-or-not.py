@@ -11,7 +11,7 @@ for i in range(len(a)):
             if a[i+j] != b[j]:
                 break
             
-            if j==len(b):
+            if j==len(b)-1:
                 y = 1
                 print("Yes")
 
