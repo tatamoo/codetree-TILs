@@ -7,7 +7,7 @@ b = list(map(int,input().split()))
 y = 0
 for i in range(len(a)):
     if a[i] == b[0]:
-        for j in range(1,len(b)):
+        for j in range(1,len(a)):
             if a[i+j] != b[j]:
                 break
             
