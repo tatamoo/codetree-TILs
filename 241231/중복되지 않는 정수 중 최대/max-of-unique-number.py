@@ -10,7 +10,7 @@ for i in range(len(a)):
 
 for i in range(len(c)):
     if c[i]==1:
-        if max<c[i]:
+        if max < i:
             max = i
 
 if max == -sys.maxsize:
