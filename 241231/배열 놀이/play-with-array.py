@@ -15,3 +15,4 @@ for _ in range(q):
     elif qq[0]==3:
         for i in range(qq[1]-1,qq[2]):
             print(arr[i],end=" ")
+        print()
