@@ -2,8 +2,9 @@ import sys
 
 n = int(input())
 a = list(map(int, input().split()))
-c = [0]*len(a)
+c = [0]*(n+1)
 max = -sys.maxsize
+
 for i in range(len(a)):
     c[a[i]] += 1
 
